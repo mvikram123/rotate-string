@@ -3,13 +3,13 @@ class Solution {
     public String s1;
     public String s2;
 
-    public boolean rotateString(String s, String goal) {
-        if(s.equals(goal)){
+    public boolean rotateString(String s1, String s2) {
+        if(s1.equals(s2)){
             return true;
         }
-        int res = (goal+goal).indexOf(s);
+        int res = (s2+s2).indexOf(s1);
 
-        if(res==-1 || s.length()!=goal.length()){
+        if(res==-1 || s1.length()!=s2.length()){
             return false;
         }
         return true;
